@@ -1,0 +1,131 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100% 100%;
+    border: none;
+    width: 100%;
+   
+}
+ 
+.container > div{
+    border: 2px solid white;
+
+}
+.First {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:  hsl(234, 29%, 20%);
+}
+.responsive-image {
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 70px;
+}
+.container-1 {
+    padding-top: 180px;
+    padding-left: 200px;
+    background-color: white;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 100px;
+    
+    
+}
+.container-2 {
+    background-color: white;
+    width: 70%;
+    margin-top: 20px;
+}
+.Third {
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+}
+.Second {
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+}
+.Fourth {
+    border: 2px solid white;
+    width: 60%;
+}
+.Fifth {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(235, 18%, 26%);
+    padding-left: 18px;
+    padding-top: 20px;
+
+}
+.input {
+    width: 130%;
+  padding: 12px 20px;
+  margin: 10px 10px 10px;
+  box-sizing: border-box;
+}
+.button {
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 6px 4px 2px;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 200px 200px;
+        border: none;
+    }
+    .container > div{
+        border: 2px solid white;
+    
+    }
+    .container-2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid white;
+        width: 100%;
+        height: 50%;
+    }
+    .container-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid white;
+        padding-left: 20px;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10%;
+    }
+    .responsive-image {
+        content: url('mobile-image.svg');
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 2px;
+        padding-left: 2px
+    }
+    .container {
+        padding-bottom: 50%;
+        width: 90%;
+        height: 80%;
+
+        
+        
+    }
+}
